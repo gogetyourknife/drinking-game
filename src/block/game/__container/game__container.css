@@ -1,0 +1,9 @@
+.game__container {
+    background-color: #f0e0d1;
+    border-radius: 5px;
+    border: #629093 2px solid;
+    margin: 0;
+    padding: 15px;
+    min-width: 500px;
+    min-height: 500px;
+}

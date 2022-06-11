@@ -1,0 +1,13 @@
+.page__wrong {
+    overflow: hidden;
+    animation: color-red 0.5s ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes color-red {
+    100% {
+        background-color: #EA8587;
+    }
+}

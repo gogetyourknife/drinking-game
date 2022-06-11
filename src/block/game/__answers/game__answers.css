@@ -1,0 +1,6 @@
+.game__answers {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    margin: 15px 0;
+}

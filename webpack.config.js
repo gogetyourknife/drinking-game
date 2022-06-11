@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 module.exports = {
     entry: {
@@ -17,7 +18,9 @@ module.exports = {
         static: path.resolve(__dirname, './dist'),
         open: true,
         compress: true,
-        port: 8080
+        port: 8080,
+        liveReload: true,
+        hot: false
     },
     module: {
         rules: [{
@@ -48,6 +51,6 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
-
+        new FaviconsWebpackPlugin('./src/icon-beer.png')
     ]
 }

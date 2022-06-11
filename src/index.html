@@ -5,12 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Drink With Putin</title>
 </head>
 
-<body>
+<body class="page">
+    <main class="main">
+        <section class="putin">
+            <h1 class="putin__title">All you have to do is press the button and laugh so Putin can hear you from his
+                boonker.</h1>
+            <p class="putin__rules">The rules are simple. If you right, drink one shot. If you not, two shots for you,
+                and don't forget to read the article or save it for the rough morning.</p>
+        </section>
+        <section class="game">
+            <div class="game__container">
+                <div class="game__question-container">
+                    <p class="game__question">Question</p>
+                    <div class="game__answers">
+                        <button class="game__button_answer" type="button">Answer</button>
+                        <button class="game__button_answer" type="button">Answer</button>
+                        <button class="game__button_answer" type="button">Answer</button>
+                        <button class="game__button_answer" type="button">Answer</button>
+                    </div>
 
+                </div>
+                <div class="game__controls">
+                    <button class="game__button_start" type="button">Start</button>
+                    <button class="game__button_next game__button_hide" type="button">Next</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <img src="<%=require('./images/birdy.png')%>" alt="Bird" class="footer__image">
+
+        <template>
+            <p class="footer__description"></p>
+        </template>
+
+    </footer>
 </body>
 
 </html>
