@@ -6,11 +6,13 @@
 @import url('../block/putin/putin.css');
 @import url('../block/putin/__title/putin__title.css');
 @import url('../block/putin/__rules/putin__rules.css');
+@import url('../block/button/button.css');
 @import url('../block/game/game.css');
 @import url('../block/game/__container/game__container.css');
 @import url('../block/game/__container/_wrong/game__container_wrong.css');
 @import url('../block/game/__container/_correct/game__container_correct.css');
 @import url('../block/game/__question-container/game__question-container.css');
+@import url('../block/game/__question-container/_hide/game__question-container_hide.css');
 @import url('../block/game/__question/game__question.css');
 @import url('../block/game/__controls/game__controls.css');
 @import url('../block/game/__answers/game__answers.css');
@@ -18,6 +20,10 @@
 @import url('../block/game/__button/_next/game__button_next.css');
 @import url('../block/game/__button/_answer/game__button_answer.css');
 @import url('../block/game/__button/_hide/game__button_hide.css');
+@import url('../block/game/__info/game__info.css');
+@import url('../block/game/__info/_hide/game__info_hide.css');
+@import url('../block/game/__button/_wrong-answer/game__button_wrong-answer.css');
+@import url('../block/game/__button/_correct-answer/game__button_correct-answer.css');
 @import url('../block/footer/footer.css');
 @import url('../block/footer/__description/footer__description.css');
 @import url('../block/footer/__image/footer__image.css');

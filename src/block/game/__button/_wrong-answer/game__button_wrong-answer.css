@@ -1,0 +1,9 @@
+.game__button_wrong-answer {
+    background-color: #e42d26;
+    border-color: #e42d26;
+}
+
+.game__button_wrong-answer:hover {
+    background-color: #e42d26;
+    border: #e42d26 1px solid;
+}

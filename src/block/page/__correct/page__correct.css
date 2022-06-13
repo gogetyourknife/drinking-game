@@ -1,6 +1,6 @@
 .page__correct {
     overflow: hidden;
-    animation: color-green 0.5s ease-in-out;
+    animation: color-green 0.2s ease-in-out;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-fill-mode: forwards;
