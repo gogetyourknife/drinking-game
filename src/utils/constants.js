@@ -12,60 +12,57 @@ export const questions = [
         question: 'Путин ест детей',
         answers: [
             {
-                text: 'True', correct: false,
+                text: 'True', correct: false, info: 'Это был просто смешной пуп',
             },
             {
-                text: 'False', correct: true,
+                text: 'False', correct: true, info: 'Ещё какой-то текст'
             }
         ],
-        info: 'Это был просто смешной пуп',
     },
     {
         question: 'Путин купается в крови оленей',
         answers: [
             {
-                text: 'True', correct: true,
+                text: 'True', correct: true, info: 'Я тоже в это не сразу поверила',
             },
             {
-                text: 'False', correct: false,
+                text: 'False', correct: false, info: 'А вот какой-то текст',
             }
         ],
-        info: 'Я тоже в это не сразу поверила',
     },
     {
         question: 'Путин посадил шамана в психушку, потому что боится ведьм',
         answers: [
             {
-                text: 'True', correct: true,
+                text: 'True', correct: true, info: 'Он чекнутый',
             },
             {
-                text: 'False', correct: false,
+                text: 'False', correct: false, info: 'Тестовый текст',
             }
         ],
-        info: 'Он чекнутый',
     },
     {
         question: 'Путин любит аквадискотеки',
         answers: [
             {
-                text: 'True', correct: true,
+                text: 'True', correct: true, info: 'Правда'
             },
             {
-                text: 'False', correct: false,
+                text: 'False', correct: false, info: 'Лош'
             }
         ],
-        info: 'Зацени расследование Навального',
+        //info: 'Зацени расследование Навального',
     },
     {
         question: 'Путин - фея',
         answers: [
             {
-                text: 'True', correct: false,
+                text: 'True', correct: false, info: 'Правда'
             },
             {
-                text: 'False', correct: true,
+                text: 'False', correct: true, info: 'Лош'
             }
         ],
-        info: 'Разве что фея склада грязи',
+        //info: 'Разве что фея склада грязи',
     }
 ]

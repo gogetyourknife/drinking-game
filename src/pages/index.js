@@ -17,14 +17,12 @@ let currentQuestionIndex = 0;
 
 
 function startGame() {
-    console.log('start');
     startButton.classList.add('game__button_hide');
     questionContainer.classList.remove('game__question-container_hide');
     setNextQuestion();
 };
 
 function showQuestion(question) {
-    answerInformation.innerText = question.info;
     questionElement.innerText = question.question;
     createAnswerButton(question);
 }
@@ -36,7 +34,8 @@ function createAnswerButton(question) {
         button.classList.add('button')
 
         if (answer.correct) {
-            button.dataset.correct = answer.correct
+            button.dataset.correct = answer.correct;
+            answerInformation.innerText = answer.info
         }
         button.addEventListener('click', selectAnswer)
         answerButtonElement.appendChild(button)
@@ -74,14 +73,6 @@ function setBodyStatusClass(element, correct) {
     }
 }
 
-function showTheAnswerInfo() {
-    answerInformation.classList.remove('game__info_hide');
-}
-
-function hideTheAnswerInfo() {
-    answerInformation.classList.add('game__info_hide');
-}
-
 function setButtonStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
@@ -89,6 +80,13 @@ function setButtonStatusClass(element, correct) {
     } else {
         element.classList.add('game__button_wrong-answer')
     }
+}
+function showTheAnswerInfo() {
+    answerInformation.classList.remove('game__info_hide');
+}
+
+function hideTheAnswerInfo() {
+    answerInformation.classList.add('game__info_hide');
 }
 
 function clearStatusClass(element) {
