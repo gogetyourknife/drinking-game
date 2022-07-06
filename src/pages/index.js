@@ -25,6 +25,7 @@ function startGame() {
 function showQuestion(question) {
     questionElement.innerText = question.question;
     createAnswerButton(question);
+    createAnswerInfo(question);
 }
 
 function createAnswerButton(question) {
@@ -35,10 +36,17 @@ function createAnswerButton(question) {
 
         if (answer.correct) {
             button.dataset.correct = answer.correct;
-            answerInformation.innerText = answer.info
         }
         button.addEventListener('click', selectAnswer)
         answerButtonElement.appendChild(button)
+    })
+}
+
+function createAnswerInfo(question) {
+    question.answers.forEach(answer => {
+        if (answer.correct) {
+            answerInformation.innerText = answer.info
+        }
     })
 }
 
@@ -102,6 +110,7 @@ function resetState() {
     while (answerButtonElement.firstChild) {
         answerButtonElement.removeChild(answerButtonElement.firstChild)
     }
+    hideTheAnswerInfo();
 }
 
 function completeGame() {
