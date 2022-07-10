@@ -85,8 +85,10 @@ function setButtonStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
         element.classList.add('game__button_correct-answer')
+        element.disabled = true;
     } else {
         element.classList.add('game__button_wrong-answer')
+        element.disabled = true;
     }
 }
 function showTheAnswerInfo() {
