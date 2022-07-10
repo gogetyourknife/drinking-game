@@ -3,6 +3,7 @@
     margin: 0;
     background-color: #a9c4c6;
     min-height: 40px;
+    min-width: 150px;
     cursor: pointer;
     font-size: 22px;
     font-weight: 400;

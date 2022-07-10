@@ -14,3 +14,15 @@
 .page::after {
     box-sizing: border-box;
 }
+
+@media (min-width: 426px) and (max-width: 767px) {
+    .page {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .page {
+        padding: 10px;
+    }
+}

@@ -42,16 +42,15 @@ export const questions = [
         ],
     },
     {
-        question: 'Путин любит аквадискотеки',
+        question: 'Putin likes aquadiscos',
         answers: [
             {
-                text: 'True', correct: true, info: 'Правда'
+                text: 'True', correct: true, info: 'It`s true! This was investigated by Navalny`s team.',
             },
             {
-                text: 'False', correct: false, info: 'Лош'
+                text: 'False', correct: false, info: 'Oops. Putin likes to party more than you think. Check out the Meduza`s article here https://inlnk.ru/DB6355, or watch Navalny`s team`s investigation here https://youtu.be/ipAnwilMncI',
             }
         ],
-        //info: 'Зацени расследование Навального',
     },
     {
         question: 'Путин - фея',
@@ -63,6 +62,5 @@ export const questions = [
                 text: 'False', correct: true, info: 'Лош'
             }
         ],
-        //info: 'Разве что фея склада грязи',
     }
 ]

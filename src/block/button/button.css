@@ -10,9 +10,17 @@
     border-radius: 5px;
     border: #a9c4c6 1px solid;
     text-transform: uppercase;
+    min-height: 40px;
+    min-width: 150px;
 }
 
 .button:hover {
     background-color: #56D1DA;
     border: #000 1px solid;
+}
+
+@media (max-width: 425px) {
+    .button {
+        min-width: 80px;
+    }
 }

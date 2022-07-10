@@ -33,7 +33,6 @@ function createAnswerButton(question) {
         const button = document.createElement('button')
         button.innerText = answer.text
         button.classList.add('button')
-
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
@@ -44,6 +43,7 @@ function createAnswerButton(question) {
 
 function createAnswerInfo(question) {
     question.answers.forEach(answer => {
+        answerInformation.dataset.correct = answer.correct;
         if (answer.correct) {
             answerInformation.innerText = answer.info
         }

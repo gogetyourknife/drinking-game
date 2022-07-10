@@ -3,7 +3,46 @@
     border-radius: 5px;
     border: #629093 2px solid;
     margin: 0;
-    padding: 15px;
+    padding: 22px;
     min-width: 500px;
     min-height: 500px;
+    /*     display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column; */
+}
+
+@media (min-width: 426px) and (max-width: 610px) {
+    .game__container {
+        max-width: 80%;
+        min-height: 400px;
+        min-width: 380px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 331px) and (max-width: 425px) {
+    .game__container {
+        max-width: 80%;
+        min-width: 300px;
+        min-height: 300px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 330px) {
+    .game__container {
+        max-width: 80%;
+        min-width: 280px;
+        min-height: 300px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .game__container {
+        min-width: 260px;
+        min-height: 260px;
+        padding: 9px;
+    }
 }

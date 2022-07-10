@@ -1,0 +1,12 @@
+.putin__rules {
+    text-align: center;
+    font-size: 20px;
+    margin: 15px 0;
+    padding: 0;
+}
+
+@media (max-width: 425px) {
+    .putin__rules {
+        font-size: 18px;
+    }
+}
